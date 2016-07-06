@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92574AD0-7175-4877-BE40-89C3D051C29E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebGL.UnitTests</RootNamespace>
+    <AssemblyName>WebGL.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\WebGL.UnitTests.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\WebGL.UnitTests.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\WebGL.UnitTests.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\WebGL.UnitTests.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\WebGL.UnitTests.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\WebGL.UnitTests.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\..\..\Program Files\NUnit-3.0.1\bin\net-4.0\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="typedarrays\ArrayBufferTests.cs" />
+    <Compile Include="conformance\v100\ArrayBufferCrash.cs" />
+    <Compile Include="conformance\v100\ArrayBufferViewCrash.cs" />
+    <Compile Include="conformance\v100\ArrayUnitTests.cs" />
+    <Compile Include="conformance\v100\BadArgumentsTest.cs" />
+    <Compile Include="conformance\BaseTest.cs" />
+    <Compile Include="conformance\v100\BufferBindTest.cs" />
+    <Compile Include="conformance\v100\BufferDataArrayBuffer.cs" />
+    <Compile Include="conformance\v100\BufferPreserveTest.cs" />
+    <Compile Include="conformance\v100\CanvasTest.cs" />
+    <Compile Include="conformance\v100\IndexValidationVerifiesTooManyIndices.cs" />
+    <Compile Include="conformance\v100\Constants.cs" />
+    <Compile Include="conformance\v100\ContextAttributesAlphaDepthStencilAntialias.cs" />
+    <Compile Include="conformance\v100\ContextLost.cs" />
+    <Compile Include="conformance\v100\ContextLostRestored.cs" />
+    <Compile Include="conformance\v100\ContextTypeTest.cs" />
+    <Compile Include="conformance\v100\CopyTexImageAndSubImage2D.cs" />
+    <Compile Include="conformance\v100\DrawArraysOutOfBounds.cs" />
+    <Compile Include="conformance\v100\DrawElementsOutOfBounds.cs" />
+    <Compile Include="conformance\v100\ErrorReporting.cs" />
+    <Compile Include="conformance\v100\FramebufferObjectAttachment.cs" />
+    <Compile Include="conformance\v100\FramebufferTest.cs" />
+    <Compile Include="conformance\v100\GetActiveTest.cs" />
+    <Compile Include="conformance\v100\GLBindAttribLocationTest.cs" />
+    <Compile Include="conformance\v100\GLClear.cs" />
+    <Compile Include="conformance\v100\GLDrawElements.cs" />
+    <Compile Include="conformance\v100\GLEnableEnumTest.cs" />
+    <Compile Include="conformance\v100\GLEnableVertexAttrib.cs" />
+    <Compile Include="conformance\v100\GLEnumTests.cs" />
+    <Compile Include="conformance\v100\GLGetActiveAttribute.cs" />
+    <Compile Include="conformance\v100\GLGetActiveUniform.cs" />
+    <Compile Include="conformance\v100\GLGetCalls.cs" />
+    <Compile Include="conformance\v100\GLGetShaderSource.cs" />
+    <Compile Include="conformance\v100\GLGetString.cs" />
+    <Compile Include="conformance\v100\GLMinAttribs.cs" />
+    <Compile Include="conformance\v100\GLMinTextures.cs" />
+    <Compile Include="conformance\v100\GLMinTexturesUnroll.cs" />
+    <Compile Include="conformance\v100\GLMinUniforms.cs" />
+    <Compile Include="conformance\v100\GLObjectGetCalls.cs" />
+    <Compile Include="conformance\v100\GLPixelstorei.cs" />
+    <Compile Include="conformance\v100\GLScissorTest.cs" />
+    <Compile Include="conformance\v100\GLShaderTest.cs" />
+    <Compile Include="conformance\v100\GLSL2TypesOfTexturesOnSameUnit.cs" />
+    <Compile Include="conformance\v100\GLSLConformance.cs" />
+    <Compile Include="conformance\v100\GLTeximage.cs" />
+    <Compile Include="conformance\v100\GLUniformArrays.cs" />
+    <Compile Include="conformance\v100\GLUniformBool.cs" />
+    <Compile Include="conformance\v100\GLUniformmatrix4Fv.cs" />
+    <Compile Include="conformance\v100\GLUnknownUniform.cs" />
+    <Compile Include="conformance\v100\GLVertexAttrib.cs" />
+    <Compile Include="conformance\v100\GLVertexAttribPointer.cs" />
+    <Compile Include="conformance\v100\GLVertexAttribZeroIssues.cs" />
+    <Compile Include="conformance\v100\IncorrectContextObjectBehaviour.cs" />
+    <Compile Include="conformance\v100\IndexValidation.cs" />
+    <Compile Include="conformance\v100\IndexValidationCopiesIndices.cs" />
+    <Compile Include="conformance\v100\IndexValidationCrashWithBufferSubData.cs" />
+    <Compile Include="conformance\v100\IndexValidationWithResizedBuffer.cs" />
+    <Compile Include="conformance\v100\InstanceOfTest.cs" />
+    <Compile Include="conformance\v100\InvalidPassedParams.cs" />
+    <Compile Include="conformance\v100\InvalidUTF16.cs" />
+    <Compile Include="conformance\v100\IsObject.cs" />
+    <Compile Include="conformance\v100\Methods.cs" />
+    <Compile Include="conformance\v100\MoreThan65536Points.cs" />
+    <Compile Include="conformance\v100\NullObjectBehaviour.cs" />
+    <Compile Include="conformance\v100\NullUniformLocation.cs" />
+    <Compile Include="conformance\v100\ObjectDeletionBehaviour.cs" />
+    <Compile Include="conformance\v100\OESStandardDerivatives.cs" />
+    <Compile Include="conformance\v100\OESTextureFloat.cs" />
+    <Compile Include="conformance\v100\OESVertexArrayObject.cs" />
+    <Compile Include="conformance\v100\OriginCleanConformance.cs" />
+    <Compile Include="conformance\v100\PointSize.cs" />
+    <Compile Include="conformance\v100\ProgramTest.cs" />
+    <Compile Include="conformance\v100\ReadPixelsPackAlignment.cs" />
+    <Compile Include="conformance\v100\ReadPixelsTest.cs" />
+    <Compile Include="conformance\v100\RenderbufferInitialization.cs" />
+    <Compile Include="conformance\v100\ResourceSharingTest.cs" />
+    <Compile Include="conformance\v100\TexImageAndSubImage2DWithArrayBufferView.cs" />
+    <Compile Include="conformance\v100\TexImageAndSubImage2DWithImage.cs" />
+    <Compile Include="conformance\v100\TexImageAndSubImage2DWithImageData.cs" />
+    <Compile Include="conformance\v100\TexImageAndSubImage2DWithVideo.cs" />
+    <Compile Include="conformance\v100\TexImageAndUniformBindingBugs.cs" />
+    <Compile Include="conformance\v100\TexImageWithFormatAndType.cs" />
+    <Compile Include="conformance\v100\TexImageWithInvalidData.cs" />
+    <Compile Include="conformance\v100\TexInputValidation.cs" />
+    <Compile Include="conformance\v100\TexParameterTest.cs" />
+    <Compile Include="conformance\v100\TexSubImage2D.cs" />
+    <Compile Include="conformance\v100\TexSubImage2DBadArgs.cs" />
+    <Compile Include="conformance\v100\TextureActiveBind.cs" />
+    <Compile Include="conformance\v100\TextureActiveBind2.cs" />
+    <Compile Include="conformance\v100\TextureComplete.cs" />
+    <Compile Include="conformance\v100\TextureFormatsTest.cs" />
+    <Compile Include="conformance\v100\TextureNPOT.cs" />
+    <Compile Include="conformance\v100\TextureTransparentPixelsInitialized.cs" />
+    <Compile Include="conformance\v100\Triangle.cs" />
+    <Compile Include="conformance\v100\TypeConversionTest.cs" />
+    <Compile Include="conformance\v100\UniformLocation.cs" />
+    <Compile Include="conformance\v100\UniformSamplersTest.cs" />
+    <Compile Include="conformance\v100\UninitializedTest.cs" />
+    <Compile Include="conformance\v100\ViewportUnchangedUponResize.cs" />
+    <Compile Include="conformance\v100\WebGLSpecific.cs" />
+    <Compile Include="conformance\WebGLTestUtils.cs" />
+    <Compile Include="typedarrays\DataViewTest.cs" />
+    <Compile Include="EGLTests.cs" />
+    <Compile Include="typedarrays\Float32ArrayTests.cs" />
+    <Compile Include="typedarrays\Float64ArrayTests.cs" />
+    <Compile Include="GLTests.cs" />
+    <Compile Include="typedarrays\Int16ArrayTests.cs" />
+    <Compile Include="typedarrays\Int32ArrayTests.cs" />
+    <Compile Include="typedarrays\Int8ArrayTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="conformance\Script.cs" />
+    <Compile Include="typedarrays\Uint16ArrayTests.cs" />
+    <Compile Include="typedarrays\Uint32ArrayTests.cs" />
+    <Compile Include="typedarrays\Uint8ArrayTests.cs" />
+    <Compile Include="WebGLRenderingContextTest.cs" />
+    <Compile Include="conformance\v100\VertexAttribTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebGL\WebGL.csproj">
+      <Project>{8E1C3957-09E6-4F6A-8341-A453169B266A}</Project>
+      <Name>WebGL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\fragmentShader.frag">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\vertexShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\boolUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\floatUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\intArrayUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\intUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\matUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\noopUniformShader.frag">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\noopUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\samplerUniformShader.frag">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\structUniformShader.vert">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

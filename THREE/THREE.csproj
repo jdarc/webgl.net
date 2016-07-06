@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{965AD54A-A24E-4FF1-8D0C-C8A539187BE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THREE</RootNamespace>
+    <AssemblyName>THREE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\THREE.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\THREE.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\THREE.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\THREE.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extras\core\ArcCurve.cs" />
+    <Compile Include="Extras\core\CubicBezierCurve.cs" />
+    <Compile Include="Extras\core\Curve.cs" />
+    <Compile Include="Extras\core\CurvePath.cs" />
+    <Compile Include="Extras\core\EllipseCurve.cs" />
+    <Compile Include="Extras\core\Gyroscope.cs" />
+    <Compile Include="Extras\core\LineCurve.cs" />
+    <Compile Include="Extras\core\Path.cs" />
+    <Compile Include="Extras\core\QuadraticBezierCurve.cs" />
+    <Compile Include="Extras\core\Shape.cs" />
+    <Compile Include="Extras\core\SplineCurve.cs" />
+    <Compile Include="Extras\core\SplineCurve3.cs" />
+    <Compile Include="Extras\FontUtils.cs" />
+    <Compile Include="Extras\Geometries\ExtrudeGeometry.cs" />
+    <Compile Include="Extras\Geometries\ShapeGeometry.cs" />
+    <Compile Include="Extras\Geometries\SphereGeometry.cs" />
+    <Compile Include="Extras\Geometries\TubeGeometry.cs" />
+    <Compile Include="Extras\GeometryUtils.cs" />
+    <Compile Include="Extras\Renderers\Plugins\Plugin.cs" />
+    <Compile Include="Extras\Shaders\ShaderSprite.cs" />
+    <Compile Include="Misc\Controls\TrackballControls.cs" />
+    <Compile Include="Misc\Loaders\Ctm\CTM.cs" />
+    <Compile Include="Misc\Loaders\Ctm\CTMLoader.cs" />
+    <Compile Include="Misc\Loaders\Ctm\LZMA.cs" />
+    <Compile Include="Objects\LOD.cs" />
+    <Compile Include="Objects\MorphAnimMesh.cs" />
+    <Compile Include="Renderers\renderables\RenderableFace3.cs" />
+    <Compile Include="Renderers\renderables\RenderableFace4.cs" />
+    <Compile Include="Renderers\renderables\RenderableLine.cs" />
+    <Compile Include="Renderers\renderables\RenderableObject.cs" />
+    <Compile Include="Renderers\renderables\RenderableParticle.cs" />
+    <Compile Include="Renderers\renderables\RenderableVertex.cs" />
+    <Compile Include="Renderers\WebGLRenderer.cs" />
+    <Compile Include="Lights\AmbientLight.cs" />
+    <Compile Include="Extras\Animation\Animation.cs" />
+    <Compile Include="Extras\Animation\AnimationHandler.cs" />
+    <Compile Include="Lights\AreaLight.cs" />
+    <Compile Include="Extras\Helpers\ArrowHelper.cs" />
+    <Compile Include="Extras\Helpers\AxisHelper.cs" />
+    <Compile Include="Objects\Bone.cs" />
+    <Compile Include="Math\Box2.cs" />
+    <Compile Include="Math\Box3.cs" />
+    <Compile Include="Core\BufferGeometry.cs" />
+    <Compile Include="Cameras\Camera.cs" />
+    <Compile Include="Extras\Helpers\CameraHelper.cs" />
+    <Compile Include="Extras\Geometries\CircleGeometry.cs" />
+    <Compile Include="Core\Clock.cs" />
+    <Compile Include="Math\Color.cs" />
+    <Compile Include="Extras\ColorUtils.cs" />
+    <Compile Include="Textures\CompressedTexture.cs" />
+    <Compile Include="Core\Raycaster.cs" />
+    <Compile Include="Extras\Geometries\CubeGeometry.cs" />
+    <Compile Include="Extras\Geometries\CylinderGeometry.cs" />
+    <Compile Include="Textures\DataTexture.cs" />
+    <Compile Include="Extras\Renderers\Plugins\DepthPassPlugin.cs" />
+    <Compile Include="Lights\DirectionalLight.cs" />
+    <Compile Include="Core\Face3.cs" />
+    <Compile Include="Core\Face4.cs" />
+    <Compile Include="Scenes\Fog.cs" />
+    <Compile Include="Scenes\FogExp2.cs" />
+    <Compile Include="Math\Frustum.cs" />
+    <Compile Include="Core\Geometry.cs" />
+    <Compile Include="Lights\HemisphereLight.cs" />
+    <Compile Include="Extras\Geometries\IcosahedronGeometry.cs" />
+    <Compile Include="Loaders\ImageLoader.cs" />
+    <Compile Include="Extras\ImageUtils.cs" />
+    <Compile Include="Extras\Objects\ImmediateRenderObject.cs" />
+    <Compile Include="Loaders\JSONLoader.cs" />
+    <Compile Include="Extras\Geometries\LatheGeometry.cs" />
+    <Compile Include="Extras\Objects\LensFlare.cs" />
+    <Compile Include="Extras\Renderers\Plugins\LensFlarePlugin.cs" />
+    <Compile Include="Lights\Light.cs" />
+    <Compile Include="Objects\Line.cs" />
+    <Compile Include="Materials\LineBasicMaterial.cs" />
+    <Compile Include="Materials\LineDashedMaterial.cs" />
+    <Compile Include="Loaders\Loader.cs" />
+    <Compile Include="Materials\Material.cs" />
+    <Compile Include="Math\Math.cs" />
+    <Compile Include="Math\Matrix3.cs" />
+    <Compile Include="Math\Matrix4.cs" />
+    <Compile Include="Objects\Mesh.cs" />
+    <Compile Include="Materials\MeshBasicMaterial.cs" />
+    <Compile Include="Materials\MeshDepthMaterial.cs" />
+    <Compile Include="Materials\MeshFaceMaterial.cs" />
+    <Compile Include="Materials\MeshLambertMaterial.cs" />
+    <Compile Include="Materials\MeshNormalMaterial.cs" />
+    <Compile Include="Materials\MeshPhongMaterial.cs" />
+    <Compile Include="Core\Object3D.cs" />
+    <Compile Include="Extras\Geometries\OctahedronGeometry.cs" />
+    <Compile Include="Cameras\OrthographicCamera.cs" />
+    <Compile Include="Objects\Particle.cs" />
+    <Compile Include="Materials\ParticleBasicMaterial.cs" />
+    <Compile Include="Materials\ParticleCanvasMaterial.cs" />
+    <Compile Include="Objects\ParticleSystem.cs" />
+    <Compile Include="Cameras\PerspectiveCamera.cs" />
+    <Compile Include="Math\Plane.cs" />
+    <Compile Include="Extras\Geometries\PlaneGeometry.cs" />
+    <Compile Include="Lights\PointLight.cs" />
+    <Compile Include="Extras\Geometries\PolyhedronGeometry.cs" />
+    <Compile Include="Core\Projector.cs" />
+    <Compile Include="Math\Quaternion.cs" />
+    <Compile Include="Math\Ray.cs" />
+    <Compile Include="Objects\Ribbon.cs" />
+    <Compile Include="Renderers\WebGLShaders.cs" />
+    <Compile Include="Scenes\Scene.cs" />
+    <Compile Include="Extras\SceneUtils.cs" />
+    <Compile Include="Materials\ShaderMaterial.cs" />
+    <Compile Include="Extras\Renderers\Plugins\ShadowMapPlugin.cs" />
+    <Compile Include="Objects\SkinnedMesh.cs" />
+    <Compile Include="Math\Sphere.cs" />
+    <Compile Include="Math\Spline.cs" />
+    <Compile Include="Lights\SpotLight.cs" />
+    <Compile Include="Objects\Sprite.cs" />
+    <Compile Include="Materials\SpriteMaterial.cs" />
+    <Compile Include="Extras\Renderers\Plugins\SpritePlugin.cs" />
+    <Compile Include="Extras\Geometries\TetrahedronGeometry.cs" />
+    <Compile Include="Textures\Texture.cs" />
+    <Compile Include="THREE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extras\Geometries\TorusGeometry.cs" />
+    <Compile Include="Extras\Geometries\TorusKnotGeometry.cs" />
+    <Compile Include="Math\Triangle.cs" />
+    <Compile Include="Math\Vector2.cs" />
+    <Compile Include="Math\Vector3.cs" />
+    <Compile Include="Math\Vector4.cs" />
+    <Compile Include="Renderers\WebGLRenderTarget.cs" />
+    <Compile Include="Renderers\WebGLRenderTargetCube.cs" />
+    <Compile Include="XMLHttpRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebGL\WebGL.csproj">
+      <Project>{8E1C3957-09E6-4F6A-8341-A453169B266A}</Project>
+      <Name>WebGL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

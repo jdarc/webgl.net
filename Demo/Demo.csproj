@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A0A5D37-5AA7-49BD-8542-A8B984566066}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Demo.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Demo.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Demo.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Demo.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Nehe\Lesson16Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nehe\Lesson16Form.designer.cs">
+      <DependentUpon>Lesson16Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THREE\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THREE\AnimationSkinningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\BenchmarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benchmark\Camera.cs" />
+    <Compile Include="Benchmark\Color.cs" />
+    <Compile Include="Benchmark\Face.cs" />
+    <Compile Include="Benchmark\Frustum.cs" />
+    <Compile Include="Benchmark\Geometry.cs" />
+    <Compile Include="Benchmark\GeometryGroup.cs" />
+    <Compile Include="Benchmark\GLProgram.cs" />
+    <Compile Include="Benchmark\Loader.cs" />
+    <Compile Include="Benchmark\Material.cs" />
+    <Compile Include="Benchmark\Matrix3.cs" />
+    <Compile Include="Benchmark\Matrix4.cs" />
+    <Compile Include="Benchmark\Mesh.cs" />
+    <Compile Include="Benchmark\Object3D.cs" />
+    <Compile Include="Benchmark\Plane.cs" />
+    <Compile Include="Benchmark\Scene.cs" />
+    <Compile Include="Benchmark\Sphere.cs" />
+    <Compile Include="Benchmark\Vector2.cs" />
+    <Compile Include="Benchmark\Vector3.cs" />
+    <Compile Include="Benchmark\Renderer.cs" />
+    <Compile Include="Benchmark\WebGLRenderObject.cs" />
+    <Compile Include="THREE\AnimationSkinningMorphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\GeometryColorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\CustomAttributesRibbonsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\CustomAttributesParticles3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\CustomAttributesParticles2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\CustomAttributesParticlesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MorphTargetsHorseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MorphNormalsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glMatrix.cs" />
+    <Compile Include="Nehe\Lesson4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nehe\Lesson4Form.designer.cs">
+      <DependentUpon>Lesson4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nehe\Lesson5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nehe\Lesson5Form.designer.cs">
+      <DependentUpon>Lesson5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THREE\ParticlesSpritesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\PerformanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\SpritesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\TestMemoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\LightsHemisphereForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\LinesDashedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\GeometryShapesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsLightmapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsBlendingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsTextureManualMipmapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsTextureFiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsTextureAnisotropyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsWireframeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\LinesSplinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\LinesSphereForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\LodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\EmptyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\MaterialsTextureCompressedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\CustomAttributesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\TrailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\ParticlesBillboardsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\LoaderCtmMaterialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\PerformanceStaticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\PerformanceDoubleSidedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\CameraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\BufferGeometryParticlesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\BufferGeometryLinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\BufferGeometryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\GeometriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THREE\GeometryCubeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="models\animated\elderlyWalk.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\animated\flamingo.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\animated\horse.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\animated\parrot.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\animated\sittingBox.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\animated\stork.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\skinned\human_walk_0_female.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\skinned\knight.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\buffalo\buffalo.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\buffalo\buffalo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\lightmap\lightmap-ao-shadow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\lightmap\lightmap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\lightmap\rocks.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\lightmap\stone.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\758px-Canestra_di_frutta_%28Caravaggio%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\crate.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\lensflare\hexangle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\lensflare\lensflare0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\lensflare\lensflare0_alpha.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\lensflare\lensflare1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\lensflare\lensflare2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\lensflare\lensflare3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\moon.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprite0.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprite0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprite1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprite1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprite2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\ball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\circle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\disc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\snowflake1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\snowflake2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\snowflake3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\snowflake4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\snowflake5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\snowflake7_alpha.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\sprites\spark1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\water.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Nehe\Lesson16Form.resx">
+      <DependentUpon>Lesson16Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THREE\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nehe\Lesson4Form.resx">
+      <DependentUpon>Lesson4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nehe\Lesson5Form.resx">
+      <DependentUpon>Lesson5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <Content Include="models\ctm\camaro\camaro.ctm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\macbook.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="textures\compressed\disturb_dxt1_mip.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\compressed\disturb_dxt1_nomip.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\compressed\explosion_dxt5_mip.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\compressed\hepatica_dxt3_mip.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\compressed\Mountains.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="models\ctm\camaro\camaro.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\ctm\camaro\car-ao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="models\ctm\camaro\plane-ao-256.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="objects\Suzanne.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\ash_uvgrid01.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\crate.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\pisa\nx.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\pisa\ny.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\pisa\nz.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\pisa\px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\pisa\py.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\pisa\pz.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\nx.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\ny.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\nz.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\px.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\py.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\pz.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="textures\cube\SwedishRoyalCastle\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THREE\THREE.csproj">
+      <Project>{965AD54A-A24E-4FF1-8D0C-C8A539187BE2}</Project>
+      <Name>THREE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebGL\WebGL.csproj">
+      <Project>{8E1C3957-09E6-4F6A-8341-A453169B266A}</Project>
+      <Name>WebGL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
